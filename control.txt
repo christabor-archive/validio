@@ -1,0 +1,8 @@
+nic
+app
+media
+talk
+postach
+makr
+dif
+notavalidurl
