@@ -6,7 +6,6 @@ def check_words(filename=None, output_file=False, throttle=False, throttle_amoun
         return
 
     if output_file:
-        import time
         output = open('output.txt', 'w+')
 
     available = []
@@ -18,6 +17,7 @@ def check_words(filename=None, output_file=False, throttle=False, throttle_amoun
 
             # throttle requests by one second
             if throttle:
+                import time
                 time.sleep(throttle_amount)
 
             try:
